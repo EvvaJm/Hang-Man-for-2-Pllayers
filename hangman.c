@@ -39,3 +39,4 @@ for (int i; word[i] != '\0'; i++){
   return 0;
 
 }
+}
