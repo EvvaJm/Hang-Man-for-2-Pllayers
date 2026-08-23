@@ -18,7 +18,7 @@ printf("Please Enter your word: ");
 scanf("%s", word);
 system("cls");
   
-printf("Pass the computer to %s", playerTwo);
+printf("Pass the computer to %s \n", playerTwo);
 printf ("Ready to start!!\n");
 printf("secret word: ");
   
@@ -26,6 +26,8 @@ for (int i = 0; word[i] != '\0'; i++){
 printf("_ ");
 }
 
+printf("\n");
+  
 printf("%s please take your guess: ", playerTwo);
 scanf(" %c", &guessedLetter);
 
