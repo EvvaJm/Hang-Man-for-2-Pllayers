@@ -17,9 +17,9 @@ printf("Please Enter your word: ");
 scanf("%s", word);
 system("cls");
   
-printf("Pass the computer to %s"playerTwo);
-Printf ("Ready to start!!");
-while (int i; word[i] != '/0'; i++){
+printf("Pass the computer to %s", playerTwo);
+printf ("Ready to start!!");
+for (int i; word[i] != '\0'; i++){
 printf("_ ");
 }
 
