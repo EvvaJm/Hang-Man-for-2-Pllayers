@@ -6,6 +6,7 @@ int main (void) {
 char playerOne[50];
 char playerTwo[50];
 char word[50];
+char guessedLetter;
 
 printf("What is Player 1's name?\n");
 scanf ("%s", playerOne);
@@ -18,11 +19,23 @@ scanf("%s", word);
 system("cls");
   
 printf("Pass the computer to %s", playerTwo);
-printf ("Ready to start!!");
+printf ("Ready to start!!\n");
+printf("secret word: ");
+  
 for (int i; word[i] != '\0'; i++){
 printf("_ ");
 }
 
+printf("%s please take your guess: ", playerTwo);
+scanf("%c", &guessedLetter);
+
+for (int i; word[i] != '\0'; i++){
+   if (guessedLetter == word[i]){
+     printf("%c ", guessedLetter);
+}else{
+     printf("_ ");
+   }
+  
   return 0;
 
 }
