@@ -22,21 +22,22 @@ printf("Pass the computer to %s", playerTwo);
 printf ("Ready to start!!\n");
 printf("secret word: ");
   
-for (int i; word[i] != '\0'; i++){
+for (int i = 0; word[i] != '\0'; i++){
 printf("_ ");
 }
 
 printf("%s please take your guess: ", playerTwo);
-scanf("%c", &guessedLetter);
+scanf(" %c", &guessedLetter);
 
-for (int i; word[i] != '\0'; i++){
+for (int i = 0; word[i] != '\0'; i++){
    if (guessedLetter == word[i]){
      printf("%c ", guessedLetter);
 }else{
      printf("_ ");
    }
-  
-  return 0;
 
 }
+  return 0;
+
+
 }
