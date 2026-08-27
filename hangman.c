@@ -31,6 +31,11 @@ printf("\n");
 printf("%s please take your guess: ", playerTwo);
 scanf(" %c", &guessedLetter);
 
+while (strlen (guessedLetter) != 1){
+ printf("ERROR please enter one letter: ");
+scanf(" %c", &guessedLetter);
+}
+  
 for (int i = 0; word[i] != '\0'; i++){
    if (guessedLetter == word[i]){
      printf("%c ", guessedLetter);
